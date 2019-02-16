@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- @Elisandro Above this isn't really important unless you are building a big site or a procution site -->
+		<title>Elisandro's Playground 🤖</title>
+		<link rel="stylesheet" href="./reset.css" />
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to
+				improve your experience.
+			</p>
+		<![endif]-->
+		<!-- This is just checking for out of date browsers.  -->
+
+		<!-- @Elisandro divs are often used as container elements for other elements -->
+		<div class="gifContainer">
+			<img
+				src="https://media1.giphy.com/media/5fvnK4iT8qduU/giphy.gif?cid=3640f6095c67440a686b506b73c03115"
+				alt="This is shown if the image fails to load"
+			/>
+		</div>
+
+		<div id="jsContainer">
+			<!-- @Elisandro, going to use this to inject other elements with JS. -->
+			<!-- Search the injex.js file for jsContainer to find usages of this element -->
+		</div>
+
+		<input id="testInput" type="text" placeholder="type some shit and press the tophat!" />
+		<button id="testButton">🎩</button>
+
+		<!-- @Elisandro src tags locations are relative to the file you are running them in. In this simple case, that is in the same root folder `./` -->
+		<script src="./index.js" async defer></script>
+	</body>
+</html>
